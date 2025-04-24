@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛍️🔥 Produtos Incríveis Com Super Descontos | Achadinhos da Jessy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FF6B6B;
+            --secondary: #4ECDC4;
+            --accent: #FFE66D;
+            --dark: #292F36;
+            --light: #F7FFF7;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+        
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        h1::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+        
+        .highlight {
+            background-color: rgba(78, 205, 196, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 5px solid var(--secondary);
+        }
+        
+        .emoji {
+            font-size: 1.3rem;
+            margin-right: 5px;
+        }
+        
+        .whatsapp-btn {
+            display: block;
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 40px auto;
+            width: 90%;
+            max-width: 400px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+        }
+        
+        .whatsapp-btn:active {
+            transform: translateY(1px);
+        }
+        
+        .benefits {
+            margin: 25px 0;
+        }
+        
+        .benefit-item {
+            margin-bottom: 15px;
+            padding-left: 35px;
+            position: relative;
+            font-size: 1.05rem;
+        }
+        
+        .benefit-item:before {
+            content: "✓";
+            color: var(--secondary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        
+        .note {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+            margin-top: 30px;
+            font-style: italic;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+            height: 120px;
+            object-fit: cover;
+        }
+        
+        .product-card h3 {
+            margin: 10px 0 5px;
+            color: var(--primary);
+            font-size: 1rem;
+        }
+        
+        .product-card .price {
+            font-weight: bold;
+            color: var(--dark);
+        }
+        
+        .product-card .old-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛍️ Achadinhos da Jessy 🔥</h1>
+        
+        <p>Encontre os melhores produtos direto de <strong>produtores e distribuidores</strong> com <strong>super descontos exclusivos</strong>!</p>
+        
+        <div class="highlight">
+            <p>Na nossa seleção você encontra:</p>
+            <div class="benefits">
+                <div class="benefit-item">Variedade incrível (moda, cosméticos, eletrônicos, casa e mais)</div>
+                <div class="benefit-item">Descontos que só encontramos diretamente com os fornecedores</div>
+                <div class="benefit-item">Ofertas relâmpago e promoções exclusivas</div>
+            </div>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Produto+1" alt="Produto 1">
+                <h3>Kit Maquiagem Profissional</h3>
+                <div class="price">R$ 89,90</div>
+                <div class="old-price">De: R$ 149,90</div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Produto+2" alt="Produto 2">
+                <h3>Smartwatch Inteligente</h3>
+                <div class="price">R$ 199,00</div>
+                <div class="old-price">De: R$ 299,00</div>
+            </div>
+        </div>
+        
+        <p class="emoji">📲 <strong>Entre no nosso grupo exclusivo para mais ofertas!</strong></p>
+        
+        <a href="https://wa.me/seunumerodegrupo" class="whatsapp-btn">
+            QUERO ENTRAR NO GRUPO DO WHATSAPP
+        </a>
+        
+        <p>Não perca essas oportunidades únicas! Produtos de qualidade com preços que cabem no seu bolso. 💙</p>
+        
+        <p class="note">(Vagas limitadas - Garanta seu acesso agora!)</p>
+    </div>
+</body>
+</html>
